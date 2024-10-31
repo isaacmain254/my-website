@@ -1,9 +1,15 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 import { LINKS, NAV_LINKS, SOCIALS } from "@/constants";
+import { useState } from "react";
 
 export const Navbar = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  
   return (
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001427] backdrop-blur-md z-50 px-10">
       <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
@@ -20,11 +26,43 @@ export const Navbar = () => {
             className="cursor-pointer hover:animate-slowspin"
           />
           <div className="font-bold ml-[10px] hidden md:block text-gray-300">
-            John Doe
+            Isaac Maina
           </div>
         </Link>
 
-        <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
+        {/* Mobile menu starts here */}
+        <div
+          className="lg:hidden text-white"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        >
+          {mobileMenuOpen ? <FaTimes size={30} /> : <FaBars size={30} />}
+        </div>
+        {mobileMenuOpen && (
+          <div className="flex flex-col w-full absolute z-50 top-14 right-0 left-0 bg-[#1e1e1e] text-white justify-center items-center leading-9 ">
+            {NAV_LINKS.map((link) => (
+              <Link
+                key={link.title}
+                href={link.link}
+                onClick={() => setMobileMenuOpen(false)}
+                className="cursor-pointer hover:text-[rgb(112,66,248)] transition"
+              >
+                {link.title}
+              </Link>
+            ))}
+
+            {/* source code */}
+            <Link
+              href={LINKS.sourceCode}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="cursor-pointer hover:text-[rgb(112,66,248)] transition"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Source Code
+            </Link>
+          </div>
+        )}
+        <div className="w-[500px] h-full hidden lg:flex flex-row items-center justify-between md:mr-20">
           <div className="flex items-center justify-between w-full h-auto border-[rgba(112,66,248,0.38)] bg-[rgba(3,0,20,0.37)] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
             {NAV_LINKS.map((link) => (
               <Link
@@ -48,7 +86,7 @@ export const Navbar = () => {
           </div>
         </div>
 
-        <div className="flex flex-row gap-5">
+        {/* <div className="flex flex-row gap-5">
           {SOCIALS.map(({ link, name, icon: Icon }) => (
             <Link
               href={link}
@@ -59,7 +97,7 @@ export const Navbar = () => {
               <Icon className="h-6 w-6 text-white" />
             </Link>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );

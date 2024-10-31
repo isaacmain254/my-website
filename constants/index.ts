@@ -207,12 +207,6 @@ export const BACKEND_SKILL = [
     height: 70,
   },
   {
-    skill_name: "Prisma",
-    image: "prisma.png",
-    width: 70,
-    height: 70,
-  },
-  {
     skill_name: "Graphql",
     image: "graphql.png",
     width: 80,
@@ -227,19 +221,9 @@ export const FULLSTACK_SKILL = [
     width: 70,
     height: 70,
   },
-  {
-    skill_name: "Tauri",
-    image: "tauri.png",
-    width: 70,
-    height: 70,
-  },
-  {
-    skill_name: "Docker",
-    image: "docker.png",
-    width: 70,
-    height: 70,
-  },
+] as const;
 
+export const OTHER_SKILL = [
   {
     skill_name: "Figma",
     image: "figma.png",
@@ -248,36 +232,27 @@ export const FULLSTACK_SKILL = [
   },
 ] as const;
 
-export const OTHER_SKILL = [
-  {
-    skill_name: "Go",
-    image: "go.png",
-    width: 60,
-    height: 60,
-  },
-] as const;
-
 export const PROJECTS = [
   {
-    title: "Modern Next.js 14 Portfolio",
+    title: "Job posting web application",
     description:
-      'Embark on a journey through my professional evolution with the "Modern Next.js Portfolio" - a dynamic showcase of my skills, experiences, and passion for web development. Crafted with precision and powered by Next.js, this portfolio is more than just a static display; it\'s an immersive experience that reflects the cutting edge of modern web technologies.',
+      "A job posting system that is user-friendly and uses Django, the popular Python framework. The system includes a user role-based authentication feature enabling clients to post jobs and freelancers to apply for opportunities seamlessly. Additionally, I have integrated Channels and Websockets to facilitate real-time chat functionality that enables enhanced communication between clients and freelancers.",
     image: "/projects/project-1.png",
-    link: "https://example.com",
+    link: "https://github.com/isaacmain254/Workpay",
   },
   {
-    title: "Interactive Cards Portfolio",
+    title: "Sacco management system",
     description:
-      'Step into the extraordinary world of my professional journey through the "Interactive Cards Portfolio" - an innovative and visually captivating platform that redefines the traditional portfolio experience. Ditching the conventional static layout, this portfolio leverages interactive cards to showcase my skills, projects, and personality in an engaging and dynamic manner.',
+      "Web application built with React and Django, designed to streamline SACCO operations. The system provides solution for managing finances, client information, and loan processes. Key features include: Role-based authentication, Financial management, Customer management, Loan management and Reporting.",
     image: "/projects/project-2.png",
-    link: "https://example.com",
+    link: "https://github.com/isaacmain254/open-sacco",
   },
   {
-    title: "Space Themed Website",
+    title: "Crownlinks website",
     description:
-      'Embark on an interstellar journey with my "Space Themed Website", a mesmerizing space-themed website that invites you to explore the cosmic wonders beyond our world. Immerse yourself in an awe-inspiring digital experience that blends cutting-edge design with the mysteries of the universe.',
+      "This project marked the beginning of my journey in web development. As my first website, it was a hands-on experience where I built foundational skills, from crafting a clean layout to implementing basic interactive features. This project sparked my passion for coding, setting the stage for a career in creating impactful, user-friendly websites.",
     image: "/projects/project-3.png",
-    link: "https://example.com",
+    link: "https://isaacmaina.netlify.app/",
   },
 ] as const;
 
@@ -360,5 +335,35 @@ export const NAV_LINKS = [
 ] as const;
 
 export const LINKS = {
-  sourceCode: "https://github.com/sanidhyy/space-portfolio",
+  sourceCode: "https://github.com/isaacmain254/my-website",
 };
+
+const experiences = [
+  {
+    title: "Frontend Software Developer",
+    company_name: "Upscale Technologies",
+    iconBg: "#FFFFFF",
+    date: "Feburuary 2024 - September 2024",
+    points: [
+      "Developed and maintained front-end features for enterprise resource planning (ERP) applications using Vue.js, TypeScript, and GraphQL to enhance user experience.",
+      "Successfully integrated Vue.js with GraphQL API to improve data fetching efficiency and application performance.",
+      "Collaborated with senior developers on architectural decisions, ensuring scalability and maintainability of software systems",
+      "Conducted code reviews, provided constructive feedback, and enforced coding standards to maintain high code quality",
+    ],
+  },
+  {
+    title: "Fullstack Software Developer - Freelance",
+    company_name: "Kavya Tech Nepal",
+    iconBg: "#ffffff",
+    date: "September 2024 - Present",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Solo web application development also open to collborative development",
+    ],
+  },
+];
+
+export { experiences };
