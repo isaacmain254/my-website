@@ -55,8 +55,8 @@ export const AboutMe = () => {
             className="w-full lg:w-1/2 h-full p-4 lg:p-0 text-xl text-gray-400 self-center"
           >
             <p className="">
-              I'm a software developer with a Computer Science degree, offering
-              software solutions for web and mobile applications. I’m always
+              I`&apos;`m a software developer with a Computer Science degree, offering
+              software solutions for web and mobile applications. I`&apos;`m always
               eager to learn and stay updated with the latest technologies. I’m
               always learning new stuff, especially in an industry that changes
               so rapidly.
@@ -64,7 +64,7 @@ export const AboutMe = () => {
             <br />
             <p>
               My passion lies in digital products, and through development, I’ve
-              found a captivating way to be a part of that world. I'm deeply
+              found a captivating way to be a part of that world. I`&apos;`m deeply
               passionate about crafting software solutions that align with
               business needs. My greatest strength is my ability to interpret
               clients’ requirements, design, code, and rigorously test software

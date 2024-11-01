@@ -13,8 +13,14 @@ import { slideInFromTop, textVariant } from "@/lib/motion";
 import { Fragment } from "react";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import { RxCode } from "react-icons/rx";
-
-const ExperienceCard = ({ experience }) => (
+interface ExperienceProps {
+    date: string;
+    title: string;
+    company_name: string;
+    iconBg: string;
+    points: string[];
+}
+const ExperienceCard = ({ experience }: {experience: ExperienceProps}) => (
   <VerticalTimelineElement
     visible={true}
     contentStyle={{ backgroundColor: "#1e1e1e", color: "#ffffff" }}
@@ -43,7 +49,7 @@ const ExperienceCard = ({ experience }) => (
 const Experience = () => {
   return (
     <Fragment>
-      <motion.div variants={textVariant()} className="flex justify-center flex-col items-center">
+      <motion.div variants={textVariant(0.5)} className="flex justify-center flex-col items-center">
         <motion.div
           variants={slideInFromTop}
           className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]]"
