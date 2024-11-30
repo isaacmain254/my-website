@@ -7,16 +7,12 @@ import { useInView } from "react-intersection-observer";
 type SkillDataProviderProps = {
   src: string;
   name: string;
-  width: number;
-  height: number;
   index: number;
 };
 
 export const SkillDataProvider = ({
   src,
   name,
-  width,
-  height,
   index,
 }: SkillDataProviderProps) => {
   const { ref, inView } = useInView({
@@ -39,7 +35,7 @@ export const SkillDataProvider = ({
       custom={index}
       transition={{ delay: index * animationDelay }}
     >
-      <Image src={`/skills/${src}`} width={width} height={height} alt={name} />
+      <Image src={`/skills/${src}`} width={60} height={60} alt={name} />
     </motion.div>
   );
 };

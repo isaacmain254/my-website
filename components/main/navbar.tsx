@@ -4,15 +4,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-import { LINKS, NAV_LINKS, SOCIALS } from "@/constants";
+import { LINKS, NAV_LINKS } from "@/constants";
 import { useState } from "react";
 
 export const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  
+
   return (
-    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001427] backdrop-blur-md z-50 px-10">
-      <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
+    <header role="banner" className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001427] backdrop-blur-md z-50 px-2 lg:px-10">
+      <nav aria-label="Main Navigation" className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
         <Link
           href="#about-me"
           className="h-auto w-auto flex flex-row items-center"
@@ -20,12 +20,12 @@ export const Navbar = () => {
           <Image
             src="/logo.png"
             alt="Logo"
-            width={70}
-            height={70}
+            width={60}
+            height={60}
             draggable={false}
             className="cursor-pointer hover:animate-slowspin"
           />
-          <div className="font-bold ml-[10px] hidden md:block text-gray-300">
+          <div className="font-bold  hidden md:block text-gray-300">
             Isaac Maina
           </div>
         </Link>
@@ -38,13 +38,13 @@ export const Navbar = () => {
           {mobileMenuOpen ? <FaTimes size={30} /> : <FaBars size={30} />}
         </div>
         {mobileMenuOpen && (
-          <div className="flex flex-col w-full absolute z-50 top-14 right-0 left-0 bg-[#1e1e1e] text-white justify-center items-center leading-9 ">
+          <div className="flex flex-col w-full absolute z-50 top-14 right-0 left-0 py-4 px-2 bg-[#1e1e1e] text-white  leading-9 ">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.title}
                 href={link.link}
                 onClick={() => setMobileMenuOpen(false)}
-                className="cursor-pointer hover:text-[rgb(112,66,248)] transition"
+                className="cursor-pointer border-b border-gray-400 py-2 hover:text-[rgb(112,66,248)] transition"
               >
                 {link.title}
               </Link>
@@ -55,11 +55,29 @@ export const Navbar = () => {
               href={LINKS.sourceCode}
               target="_blank"
               rel="noreferrer noopener"
-              className="cursor-pointer hover:text-[rgb(112,66,248)] transition"
+              className="cursor-pointer border-b border-gray-400 py-2 hover:text-[rgb(112,66,248)] transition"
               onClick={() => setMobileMenuOpen(false)}
             >
               Source Code
             </Link>
+          <Link
+            href="https://www.upwork.com/freelancers/~01466943c42b35dcd4"
+            target="_blank"
+            rel="noreferrer noopener"
+             className="flex gap-2 cursor-pointer border-b border-gray-400 py-2 hover:text-[rgb(112,66,248)] transition"
+             onClick={() => setMobileMenuOpen(false)}
+          >
+            Upwork
+          </Link>
+          <Link
+            href="https://www.fiverr.com/isaac_maina"
+            target="_blank"
+            rel="noreferrer noopener"
+             className="flex gap-2 cursor-pointer border-b border-gray-400 py-2 hover:text-[rgb(112,66,248)] transition"
+             onClick={() => setMobileMenuOpen(false)}
+          >
+            Fiverr
+          </Link>
           </div>
         )}
         <div className="w-[500px] h-full hidden lg:flex flex-row items-center justify-between md:mr-20">
@@ -86,19 +104,35 @@ export const Navbar = () => {
           </div>
         </div>
 
-        {/* <div className="flex flex-row gap-5">
-          {SOCIALS.map(({ link, name, icon: Icon }) => (
-            <Link
-              href={link}
-              target="_blank"
-              rel="noreferrer noopener"
-              key={name}
-            >
-              <Icon className="h-6 w-6 text-white" />
-            </Link>
-          ))}
-        </div> */}
-      </div>
-    </div>
+        <div className="hidden lg:flex flex-row gap-3">
+          <Link
+            href="https://www.upwork.com/freelancers/~01466943c42b35dcd4"
+            target="_blank"
+            rel="noreferrer noopener"
+             className="cursor-pointer hover:scale-125"
+          >
+            <Image
+              src="/upwork.png"
+              alt="Isaac Maina Upwork profile"
+              width={30}
+              height={30}
+            />
+          </Link>
+          <Link
+            href="https://www.fiverr.com/isaac_maina"
+            target="_blank"
+            rel="noreferrer noopener"
+             className="cursor-pointer hover:scale-125"
+          >
+            <Image
+              src="/fiverr.png"
+              alt="Isaac Maina Fiverr profile"
+              width={30}
+              height={30}
+            />
+          </Link>
+        </div>
+      </nav>
+    </header>
   );
 };

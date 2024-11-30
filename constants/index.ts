@@ -1,13 +1,6 @@
-import { FaYoutube, FaFacebook } from "react-icons/fa";
-import {
-  RxDiscordLogo,
-  RxGithubLogo,
-  RxInstagramLogo,
-  RxTwitterLogo,
-  RxLinkedinLogo,
-} from "react-icons/rx";
+import { RxGithubLogo, RxTwitterLogo, RxLinkedinLogo } from "react-icons/rx";
 
-export const SKILL_DATA = [
+export const FRONTEND_SKILL = [
   {
     skill_name: "HTML",
     image: "html.png",
@@ -75,95 +68,8 @@ export const SKILL_DATA = [
     height: 80,
   },
   {
-    skill_name: "Node.js",
-    image: "node.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "MongoDB",
-    image: "mongodb.png",
-    width: 40,
-    height: 40,
-  },
-] as const;
-
-export const SOCIALS = [
-  {
-    name: "Instagram",
-    icon: RxInstagramLogo,
-    link: "https://instagram.com",
-  },
-  {
-    name: "Facebook",
-    icon: FaFacebook,
-    link: "https://facebook.com",
-  },
-  {
-    name: "Twitter",
-    icon: RxTwitterLogo,
-    link: "https://twitter.com",
-  },
-] as const;
-
-export const FRONTEND_SKILL = [
-  {
-    skill_name: "HTML",
-    image: "html.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "CSS",
-    image: "css.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "JavaScript",
-    image: "js.png",
-    width: 65,
-    height: 65,
-  },
-  {
-    skill_name: "Tailwind CSS",
-    image: "tailwind.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Material UI",
-    image: "mui.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "React",
-    image: "react.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Redux",
-    image: "redux.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "React Query",
-    image: "reactquery.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "TypeScript",
-    image: "ts.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Next.js 14",
-    image: "next.png",
+    skill_name: "Graphql",
+    image: "graphql.png",
     width: 80,
     height: 80,
   },
@@ -173,48 +79,34 @@ export const BACKEND_SKILL = [
   {
     skill_name: "Node.js",
     image: "node.png",
-    width: 80,
-    height: 80,
   },
   {
     skill_name: "Express.js",
     image: "express.png",
-    width: 80,
-    height: 80,
+  },
+  {
+    skill_name: "Django",
+    image: "django.png",
   },
   {
     skill_name: "MongoDB",
     image: "mongodb.png",
-    width: 40,
-    height: 40,
   },
   {
     skill_name: "Firebase",
     image: "firebase.png",
-    width: 55,
-    height: 55,
   },
   {
     skill_name: "PostgreSQL",
     image: "postgresql.png",
-    width: 70,
-    height: 70,
   },
   {
     skill_name: "MySQL",
     image: "mysql.png",
-    width: 70,
-    height: 70,
-  },
-  {
-    skill_name: "Graphql",
-    image: "graphql.png",
-    width: 80,
-    height: 80,
   },
 ] as const;
 
-export const FULLSTACK_SKILL = [
+export const MOBILE_APPS_SKILL = [
   {
     skill_name: "React Native",
     image: "reactnative.png",
@@ -230,92 +122,61 @@ export const OTHER_SKILL = [
     width: 50,
     height: 50,
   },
+  {
+    skill_name: "Webflow",
+    image: "webflow.png",
+    width: 50,
+    height: 50,
+  },
 ] as const;
 
 export const PROJECTS = [
   {
     title: "Job posting web application",
+    alt_text:
+      "Screenshot of job posting web application developed with Django.",
     description:
       "A job posting system that is user-friendly and uses Django, the popular Python framework. The system includes a user role-based authentication feature enabling clients to post jobs and freelancers to apply for opportunities seamlessly. Additionally, I have integrated Channels and Websockets to facilitate real-time chat functionality that enables enhanced communication between clients and freelancers.",
     image: "/projects/project-1.png",
     link: "https://github.com/isaacmain254/Workpay",
+    tech: "",
   },
   {
     title: "Sacco management system",
+    alt_text:
+      "Screenshot of a SACCO management system web application, built with React and Django.",
     description:
       "Web application built with React and Django, designed to streamline SACCO operations. The system provides solution for managing finances, client information, and loan processes. Key features include: Role-based authentication, Financial management, Customer management, Loan management and Reporting.",
     image: "/projects/project-2.png",
     link: "https://github.com/isaacmain254/open-sacco",
+    tech: "",
   },
   {
     title: "Crownlinks website",
+    alt_text: "Screenshot of a Reactjs portfolio website.",
     description:
       "This project marked the beginning of my journey in web development. As my first website, it was a hands-on experience where I built foundational skills, from crafting a clean layout to implementing basic interactive features. This project sparked my passion for coding, setting the stage for a career in creating impactful, user-friendly websites.",
     image: "/projects/project-3.png",
     link: "https://isaacmaina.netlify.app/",
-  },
-] as const;
-
-export const FOOTER_DATA = [
-  {
-    title: "Community",
-    data: [
-      {
-        name: "YouTube",
-        icon: FaYoutube,
-        link: "https://youtube.com",
-      },
-      {
-        name: "GitHub",
-        icon: RxGithubLogo,
-        link: "https://github.com",
-      },
-      {
-        name: "Discord",
-        icon: RxDiscordLogo,
-        link: "https://discord.com",
-      },
-    ],
+    tech: "",
   },
   {
-    title: "Social Media",
-    data: [
-      {
-        name: "Instagram",
-        icon: RxInstagramLogo,
-        link: "https://instagram.com",
-      },
-      {
-        name: "Twitter",
-        icon: RxTwitterLogo,
-        link: "https://twitter.com",
-      },
-      {
-        name: "Linkedin",
-        icon: RxLinkedinLogo,
-        link: "https://linkedin.com",
-      },
-    ],
+    title: "Coffee shop landing page",
+    alt_text: "Custom Webflow website for a coffee shop by a Kenyan developer.",
+    description:
+      "I created a modern and interactive Webflow website with a sleek design that is easy to use and responsive across all devices.",
+    image: "/projects/webflow-1.png",
+    link: "https://coffee-shop-61e2ee.webflow.io/",
+    tech: "webflow",
   },
   {
-    title: "About",
-    data: [
-      {
-        name: "Become Sponsor",
-        icon: null,
-        link: "https://youtube.com",
-      },
-      {
-        name: "Learning about me",
-        icon: null,
-        link: "https://example.com",
-      },
-      {
-        name: "Contact Me",
-        icon: null,
-        link: "mailto:contact@example.com",
-      },
-    ],
+    title: "Global payment Webflow website",
+    alt_text: "Custom Webflow landing page for a Fintech company",
+    description:
+      "Global Pay is a payment system website developed using Webflow. This project focused on designing and creating a sleek, user-friendly site aimed at boosting sales and enhancing customer engagement.",
+    image: "/projects/webflow-2.png",
+    link: "https://global-pay-africa.webflow.io/",
+    tech: "webflow",
   },
 ] as const;
 
@@ -338,7 +199,7 @@ export const LINKS = {
   sourceCode: "https://github.com/isaacmain254/my-website",
 };
 
-const experiences = [
+export const EXPERIENCES = [
   {
     title: "Frontend Software Developer",
     company_name: "Upscale Technologies",
@@ -366,4 +227,20 @@ const experiences = [
   },
 ];
 
-export { experiences };
+export const SOCIALS = [
+  {
+    name: "Twitter",
+    icon: RxTwitterLogo,
+    link: "https://x.com/isaacmain3",
+  },
+  {
+    name: "LinkedIn",
+    icon: RxLinkedinLogo,
+    link: "https://www.linkedin.com/in/isaac-maina-wambui/",
+  },
+  {
+    name: "GitHub",
+    icon: RxGithubLogo,
+    link: "https://github.com/isaacmain254",
+  },
+] as const;

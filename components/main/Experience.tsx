@@ -7,8 +7,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { motion } from "framer-motion";
 import { styles } from "@/style";
-import { experiences } from "@/constants";
-import { SectionWrapper } from "@/hoc";
+import { EXPERIENCES } from "@/constants";
 import { slideInFromTop, textVariant } from "@/lib/motion";
 import { Fragment } from "react";
 import { SparklesIcon } from "@heroicons/react/24/solid";
@@ -28,6 +27,7 @@ const ExperienceCard = ({ experience }: {experience: ExperienceProps}) => (
     date={experience.date}
     iconStyle={{ background: experience.iconBg }}
     icon={<RxCode />}
+    className="max-w-full"
   >
     <div>
       <h3 className=" text-[24px] font-bold">{experience.title}</h3>
@@ -37,7 +37,7 @@ const ExperienceCard = ({ experience }: {experience: ExperienceProps}) => (
       {experience.points.map((point, index) => (
         <li
           key={`experience-point-${index}`}
-          className=" text-[14px] pl-1 tracking-wider "
+          className=" text-base font-normal"
         >
           {point}
         </li>
@@ -63,7 +63,7 @@ const Experience = () => {
       </motion.div>
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
-          {experiences.map((experience, index) => (
+          {EXPERIENCES.map((experience, index) => (
             <ExperienceCard key={index} experience={experience} />
           ))}
         </VerticalTimeline>

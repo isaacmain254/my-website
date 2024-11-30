@@ -15,22 +15,22 @@ export const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
+      className="flex items-center justify-center w-full px-2 lg:px-20 mt-28 lg:mt-40"
     >
-      <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
+      <div className="w-full lg:w-1/2 flex flex-col gap-5 justify-center text-start">
         <motion.div
           variants={slideInFromTop}
-          className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]]"
+          className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
         >
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
           <h1 className="Welcome-text text-[13px]">
-            Fullstack Developer Portfolio
+            Fullstack Software Developer
           </h1>
         </motion.div>
 
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-6 mt-6 text-6xl text-bold text-white max-w-[600px] w-auto h-auto"
+          className="flex flex-col gap-6 mt-6 text-4xl md:text-6xl text-bold text-white"
         >
           <span>
             Providing{" "}
@@ -43,28 +43,37 @@ export const HeroContent = () => {
 
         <motion.p
           variants={slideInFromLeft(0.8)}
-          className="text-lg text-gray-400 my-5 max-w-[600px]"
+          className="text-lg text-gray-400 my-5"
         >
-          I&apos;m a Full Stack Software Engineer with experience in Website,
-          Mobile, and Software development. Check out my projects and skills.
+          I&apos;m a Full Stack Software Engineer with experience in Web
+          applications, Mobile applications, and Software development. I help
+          businesses streamline operations and achieve their goals through
+          innovative technology. Explore my projects and discover the skills
+          that bring ideas to life.
         </motion.p>
-
-        <motion.a
-          variants={slideInFromLeft(1)}
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
-          href="#about-me"
-        >
-          Learn more
-        </motion.a>
+        <motion.div variants={slideInFromLeft(1)} className="flex gap-4">
+          <a
+            className="py-2  px-5 text-center text-white cursor-pointer rounded-lg border  border-[#7042f88b] opacity-[0.9] hover:border-white"
+            href="#projects"
+          >
+            Learn more
+          </a>
+          {/* <a
+            className="button-primary  py-2 px-5 text-center text-white cursor-pointer rounded-lg "
+            href=""
+          >
+            Book a call
+          </a> */}
+        </motion.div>
       </div>
 
       <motion.div
         variants={slideInFromRight(0.8)}
-        className="w-full h-full flex justify-center items-center"
+        className="w-full lg:w-1/2 hidden lg:flex justify-center items-center"
       >
         <Image
           src="/hero-bg.svg"
-          alt="work icons"
+          alt="Web application development"
           height={650}
           width={650}
           draggable={false}

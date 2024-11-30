@@ -100,7 +100,12 @@ export const zoomIn = (delay: number, duration: number) => {
   };
 };
 
-export const slideIn = (direction:string, type:any, delay:number, duration:number) => {
+export const slideIn = (
+  direction: string,
+  type: any,
+  delay: number,
+  duration: number
+) => {
   return {
     hidden: {
       x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
@@ -119,7 +124,7 @@ export const slideIn = (direction:string, type:any, delay:number, duration:numbe
   };
 };
 
-export const staggerContainer = (staggerChildren:any, delayChildren:any) => {
+export const staggerContainer = (staggerChildren: any, delayChildren: any) => {
   return {
     hidden: {},
     show: {
@@ -129,4 +134,15 @@ export const staggerContainer = (staggerChildren:any, delayChildren:any) => {
       },
     },
   };
+};
+
+export const slideInFromBottom = {
+  hidden: { opacity: 0, y: 300 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1.5,
+    },
+  },
 };

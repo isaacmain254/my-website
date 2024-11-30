@@ -1,26 +1,66 @@
+"use client";
 import { ProjectCard } from "@/components/sub/project-card";
 import { PROJECTS } from "@/constants";
+import { SparklesIcon } from "@heroicons/react/24/solid";
+import { useState } from "react";
+import AnimatedDiv from "../sub/AnimatedDiv";
 
 export const Projects = () => {
+  const [filter, setFilter] = useState<"all" | "webflow">("all");
+
+  const filteredProjects =
+    filter === "all" ? PROJECTS : PROJECTS.filter((project) => project.tech === 'webflow');
+
   return (
-    <section
-      id="projects"
-      className="flex flex-col items-center justify-center py-20"
-    >
-      <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
-        My Projects
-      </h1>
-      <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
-        {PROJECTS.map((project) => (
+    <section id="projects" className=" py-20 w-full lg:w-[80%] mx-auto">
+      <div className="w-full flex flex-col items-center justify-center mb-10">
+        <div className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]]">
+          <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
+          <h1 className="Welcome-text text-[13px]">
+            Projects I have contributed to
+          </h1>
+        </div>
+
+        <div className="text-[30px] text-white font-medium mt-[10px] text-center mb-[15px]">
+          See My Work
+        </div>
+      </div>
+      <div className="w-full flex gap-5 justify-center py-5">
+        <button
+          className={`py-2 px-5 text-center text-white cursor-pointer rounded-lg ${
+            filter === "all"
+              ? "button-primary "
+              : "border border-[#7042f88b] opacity-[0.9]"
+          }`}
+          onClick={() => setFilter("all")}
+        >
+          All
+        </button>
+        <button
+          className={`py-2 px-5 text-center text-white cursor-pointer rounded-lg ${
+            filter === "webflow"
+              ? "button-primary "
+              : "border border-[#7042f88b] opacity-[0.9]"
+          }`}
+          onClick={() => setFilter("webflow")}
+        >
+          Webflow
+        </button>
+      </div>
+      <AnimatedDiv
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-3"
+      >
+        {filteredProjects.map((project, index) => (
           <ProjectCard
-            key={project.title}
+            key={index}
+            alt_text={project.alt_text}
             src={project.image}
             title={project.title}
             description={project.description}
             link={project.link}
           />
         ))}
-      </div>
+      </AnimatedDiv>
     </section>
   );
 };
