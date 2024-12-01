@@ -137,7 +137,7 @@ export const staggerContainer = (staggerChildren: any, delayChildren: any) => {
 };
 
 export const slideInFromBottom = {
-  hidden: { opacity: 0, y: 300 },
+  hidden: { opacity: 0, y: 200 },
   visible: {
     opacity: 1,
     y: 0,
