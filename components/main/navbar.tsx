@@ -32,7 +32,7 @@ export const Navbar = () => {
 
         {/* Mobile menu starts here */}
         <div
-          className="lg:hidden text-white"
+          className="lg:hidden text-white cursor-pointer"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? <FaTimes size={30} /> : <FaBars size={30} />}
