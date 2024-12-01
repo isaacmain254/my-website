@@ -16,7 +16,7 @@ export const Skills = () => {
       className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden py-20"
     >
       <SkillText />
-      <div className="text-white text-xl mt-5">Frontend Development</div>
+      <h3 className="text-white text-xl mt-5">Frontend Development</h3>
       <div className="flex flex-row justify-around flex-wrap  gap-5 items-center">
         {FRONTEND_SKILL.map((skill, i) => (
           <SkillDataProvider
@@ -27,7 +27,7 @@ export const Skills = () => {
           />
         ))}
       </div>
-      <div className="text-white text-xl mt-5">Backend Development</div>
+      <h3 className="text-white text-xl mt-5">Backend Development</h3>
       <div className="flex flex-row justify-around flex-wrap  gap-5 items-center">
         {BACKEND_SKILL.map((skill, i) => (
           <SkillDataProvider
@@ -38,7 +38,7 @@ export const Skills = () => {
           />
         ))}
       </div>
-      <div className="text-white text-xl mt-5">Mobile Application Development</div>
+      <h3 className="text-white text-xl mt-5">Mobile Application Development</h3>
       <div className="flex flex-row justify-around flex-wrap gap-5 items-center">
         {MOBILE_APPS_SKILL.map((skill, i) => (
           <SkillDataProvider
@@ -49,7 +49,7 @@ export const Skills = () => {
           />
         ))}
       </div>
-      <div className="text-white text-xl mt-5">Web Design</div>
+      <h3 className="text-white text-xl mt-5">Web Design</h3>
       <div className="flex flex-row justify-around flex-wrap gap-5 items-center">
         {OTHER_SKILL.map((skill, i) => (
           <SkillDataProvider

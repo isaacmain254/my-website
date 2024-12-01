@@ -15,6 +15,7 @@ export const Footer = () => {
              href={social.link}
              target="_blank"
              rel="noreferrer noopener"
+              aria-label={social["aria-label"]}
              className="flex flex-row items-center p-2 text-2xl bg-[#7042f88b] rounded-full mb-5 md:mb-0"
            >
              {social.icon && <social.icon />}

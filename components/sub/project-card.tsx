@@ -27,7 +27,7 @@ export const ProjectCard = ({
       />
 
       <div className="relative p-4">
-        <h4 className="text-2xl font-semibold text-white">{title}</h4>
+        <h3 className="text-2xl font-semibold text-white">{title}</h3>
         <p className="mt-2 text-gray-300 text-base">{description}</p>
       </div>
     <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center lg:opacity-0 group-hover:opacity-100 opacity-100 transition-opacity duration-300">

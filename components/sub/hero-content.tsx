@@ -23,22 +23,22 @@ export const HeroContent = () => {
           className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
         >
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-          <h1 className="Welcome-text text-[13px]">
+          <span className="Welcome-text text-[13px]">
             Fullstack Software Developer
-          </h1>
+          </span>
         </motion.div>
 
         <motion.div
           variants={slideInFromLeft(0.5)}
           className="flex flex-col gap-6 mt-6 text-4xl md:text-6xl text-bold text-white"
         >
-          <span>
+          <h1>
             Providing{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               the best
             </span>{" "}
             project experience.
-          </span>
+          </h1>
         </motion.div>
 
         <motion.p
@@ -55,6 +55,8 @@ export const HeroContent = () => {
           <a
             className="py-2  px-5 text-center text-white cursor-pointer rounded-lg border  border-[#7042f88b] opacity-[0.9] hover:border-white"
             href="#projects"
+             aria-label="View Projects"
+            title="Explore My Projects"
           >
             Learn more
           </a>

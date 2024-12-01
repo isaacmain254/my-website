@@ -16,14 +16,14 @@ export const Projects = () => {
       <div className="w-full flex flex-col items-center justify-center mb-10">
         <div className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]]">
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-          <h1 className="Welcome-text text-[13px]">
+          <span className="Welcome-text text-[13px]">
             Projects I have contributed to
-          </h1>
+          </span>
         </div>
 
-        <div className="text-[30px] text-white font-medium mt-[10px] text-center mb-[15px]">
+        <h2 className="text-[30px] text-white font-medium mt-[10px] text-center mb-[15px]">
           See My Work
-        </div>
+        </h2>
       </div>
       <div className="w-full flex gap-5 justify-center py-5">
         <button

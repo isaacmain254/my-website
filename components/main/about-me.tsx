@@ -23,16 +23,16 @@ export const AboutMe = () => {
           className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]]"
         >
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-          <h2 className="Welcome-text text-[13px]">
+          <span className="Welcome-text text-[13px]">
             What you should know about me
-          </h2>
+          </span>
         </motion.div>
 
         <motion.div
           variants={slideInFromLeft(0.5)}
           className="text-[30px] text-white font-medium mt-[10px] text-center mb-[10px]"
         >
-          About Me
+          <h2>About Me</h2>
         </motion.div>
       </div>
       <div className="w-full lg:w-[80%]  mx-auto">
@@ -57,9 +57,9 @@ export const AboutMe = () => {
               I’m a full-stack software developer from Kenya with a degree in
               Computer Science, specializing in custom web and mobile
               application development. I have hands-on experience with
-              technologies like Python, JavaScript, Typescript, and
-              Webflow, enabling me to build responsive, user-friendly, and
-              scalable digital solutions.
+              technologies like Python, JavaScript, Typescript, and Webflow,
+              enabling me to build responsive, user-friendly, and scalable
+              digital solutions.
             </p>
             <br />
             <p>

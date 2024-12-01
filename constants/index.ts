@@ -232,15 +232,18 @@ export const SOCIALS = [
     name: "Twitter",
     icon: RxTwitterLogo,
     link: "https://x.com/isaacmain3",
+    "aria-label": "Connect with me on Twitter",
   },
   {
     name: "LinkedIn",
     icon: RxLinkedinLogo,
     link: "https://www.linkedin.com/in/isaac-maina-wambui/",
+    "aria-label": "Connect with me on LinkedIn",
   },
   {
     name: "GitHub",
     icon: RxGithubLogo,
     link: "https://github.com/isaacmain254",
+    "aria-label": "See all my projects on GitHub",
   },
 ] as const;

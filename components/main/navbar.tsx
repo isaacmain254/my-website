@@ -109,6 +109,7 @@ export const Navbar = () => {
             href="https://www.upwork.com/freelancers/~01466943c42b35dcd4"
             target="_blank"
             rel="noreferrer noopener"
+            aria-label="Hire me on Upwork"
              className="cursor-pointer hover:scale-125"
           >
             <Image
@@ -122,6 +123,7 @@ export const Navbar = () => {
             href="https://www.fiverr.com/isaac_maina"
             target="_blank"
             rel="noreferrer noopener"
+            aria-label="Hire me on Fiverr"
              className="cursor-pointer hover:scale-125"
           >
             <Image
