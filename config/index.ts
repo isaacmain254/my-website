@@ -49,4 +49,7 @@ export const siteConfig: Metadata = {
     name: "Isaac Maina",
     url: "https://github.com/isaacmain254",
   },
+  verification: {
+    google: "lszFf5NAaVZmyOT-qKPfhEX706OvCpwivkdCFGFyZqg",
+  },
 } as const;
