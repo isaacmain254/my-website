@@ -178,6 +178,15 @@ export const PROJECTS = [
     link: "https://global-pay-africa.webflow.io/",
     tech: "webflow",
   },
+  {
+    title: "Digital marketing agency",
+    alt_text: "Custom Webflow website digital marketing agency",
+    description:
+      "A sleek, user-friendly digital marketing agency site designed to highlight services, drive client engagement, and demonstrate effective use of modern web design and responsive functionality.",
+    image: "/projects/Digital-marketing-agency.png",
+    link: "https://digital-marketing-agency-e36151.webflow.io/",
+    tech: "webflow",
+  },
 ] as const;
 
 export const NAV_LINKS = [
