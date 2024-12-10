@@ -223,7 +223,7 @@ export const EXPERIENCES = [
   },
   {
     title: "Fullstack Software Developer - Freelance",
-    company_name: "Kavya Tech Nepal",
+    company_name: "",
     iconBg: "#ffffff",
     date: "September 2024 - Present",
     points: [
