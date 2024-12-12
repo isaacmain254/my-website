@@ -9,7 +9,9 @@ export const Projects = () => {
   const [filter, setFilter] = useState<"all" | "webflow">("all");
 
   const filteredProjects =
-    filter === "all" ? PROJECTS : PROJECTS.filter((project) => project.tech === 'webflow');
+    filter === "all"
+      ? PROJECTS
+      : PROJECTS.filter((project) => project.technologies.includes("Webflow"));
 
   return (
     <section id="projects" className=" py-20 w-full lg:w-[80%] mx-auto">
@@ -47,17 +49,16 @@ export const Projects = () => {
           Webflow
         </button>
       </div>
-      <AnimatedDiv
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-3"
-      >
+      <AnimatedDiv className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-3">
         {filteredProjects.map((project, index) => (
           <ProjectCard
             key={index}
             alt_text={project.alt_text}
-            src={project.image}
+            image={project.image}
             title={project.title}
             description={project.description}
             link={project.link}
+            technologies={project.technologies}
           />
         ))}
       </AnimatedDiv>

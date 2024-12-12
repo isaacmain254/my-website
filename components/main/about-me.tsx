@@ -41,16 +41,16 @@ export const AboutMe = () => {
             variants={slideInFromLeft(0.5)}
             className="w-full lg:w-1/2 h-full mx-auto"
           >
-            <div className="md:w-[400px] md:h-[450px] rounded-lg overflow-hidden mx-auto  border border-[#7042f88b]">
+            <div className="w-[300px] h-[300px] md:w-[450px] md:h-[450px] rounded-lg md:rounded-full overflow-hidden mx-auto  border border-[#7042f88b]">
               <Image
                 src={MyProfile}
                 alt="Isaac Maina - fullstack software developer"
-                className="object-cover "
+                className="object-cover"
               />
             </div>
           </motion.div>
           <motion.div
-            variants={slideInFromRight(0.5)}
+            variants={slideInFromRight(0.8)}
             className="w-full lg:w-1/2 h-full text-lg text-gray-400 self-center"
           >
             <p>

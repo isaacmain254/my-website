@@ -1,5 +1,12 @@
 import { RxGithubLogo, RxTwitterLogo, RxLinkedinLogo } from "react-icons/rx";
-
+export interface ProjectsProps {
+  image: string;
+  title: string;
+  description: string;
+  link: string;
+  alt_text: string;
+  technologies: Array<string>;
+}
 export const FRONTEND_SKILL = [
   {
     skill_name: "HTML",
@@ -130,7 +137,7 @@ export const OTHER_SKILL = [
   },
 ] as const;
 
-export const PROJECTS = [
+export const PROJECTS: ProjectsProps[] = [
   {
     title: "Job posting web application",
     alt_text:
@@ -139,7 +146,14 @@ export const PROJECTS = [
       "A job posting system that is user-friendly and uses Django, the popular Python framework. The system includes a user role-based authentication feature enabling clients to post jobs and freelancers to apply for opportunities seamlessly. Additionally, I have integrated Channels and Websockets to facilitate real-time chat functionality that enables enhanced communication between clients and freelancers.",
     image: "/projects/project-1.png",
     link: "https://github.com/isaacmain254/Workpay",
-    tech: "",
+    technologies: [
+      "Django",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Channels",
+      "Websockets",
+    ],
   },
   {
     title: "Sacco management system",
@@ -149,7 +163,7 @@ export const PROJECTS = [
       "Web application built with React and Django, designed to streamline SACCO operations. The system provides solution for managing finances, client information, and loan processes. Key features include: Role-based authentication, Financial management, Customer management, Loan management and Reporting.",
     image: "/projects/project-2.png",
     link: "https://github.com/isaacmain254/open-sacco",
-    tech: "",
+    technologies: ["React", "Django", "TypeScript", "Tailwind"],
   },
   {
     title: "Crownlinks website",
@@ -158,7 +172,7 @@ export const PROJECTS = [
       "This project marked the beginning of my journey in web development. As my first website, it was a hands-on experience where I built foundational skills, from crafting a clean layout to implementing basic interactive features. This project sparked my passion for coding, setting the stage for a career in creating impactful, user-friendly websites.",
     image: "/projects/project-3.png",
     link: "https://isaacmaina.netlify.app/",
-    tech: "",
+    technologies: ["React", "CSS"],
   },
   {
     title: "Coffee shop landing page",
@@ -167,7 +181,7 @@ export const PROJECTS = [
       "I created a modern and interactive Webflow website with a sleek design that is easy to use and responsive across all devices.",
     image: "/projects/webflow-1.png",
     link: "https://coffee-shop-61e2ee.webflow.io/",
-    tech: "webflow",
+    technologies: ["Webflow"],
   },
   {
     title: "Global payment Webflow website",
@@ -176,7 +190,7 @@ export const PROJECTS = [
       "Global Pay is a payment system website developed using Webflow. This project focused on designing and creating a sleek, user-friendly site aimed at boosting sales and enhancing customer engagement.",
     image: "/projects/webflow-2.png",
     link: "https://global-pay-africa.webflow.io/",
-    tech: "webflow",
+    technologies: ["Webflow"],
   },
   {
     title: "Digital marketing agency",
@@ -185,7 +199,7 @@ export const PROJECTS = [
       "A sleek, user-friendly digital marketing agency site designed to highlight services, drive client engagement, and demonstrate effective use of modern web design and responsive functionality.",
     image: "/projects/Digital-marketing-agency.png",
     link: "https://digital-marketing-agency-e36151.webflow.io/",
-    tech: "webflow",
+    technologies: ["Webflow"],
   },
 ] as const;
 
