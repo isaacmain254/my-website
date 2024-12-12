@@ -24,7 +24,7 @@ export const ProjectCard = ({
         <h3 className="text-2xl font-semibold text-white">{title}</h3>
         <p className="text-gray-300 text-base">{description}</p>
       </div>
-      <ul className="flex flex-wrap gap-3 px-4 mt-auto">
+      <ul className="flex flex-wrap gap-3 px-4 mt-auto text-sm">
         {technologies.map((tech, index) => (
           <li
             key={index}
