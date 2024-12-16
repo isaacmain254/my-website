@@ -23,16 +23,16 @@ export const siteConfig: Metadata = {
     type: "website",
     url:
       process.env.NODE_ENV === "production"
-        ? "https://isaacmiana.vercel.app"
+        ? "https://isaacmaina.vercel.app/"
         : "http://localhost:3000",
     description: "Fullstack Software Engineer based in Kenya",
     // images: ["/logo.png"],
     images: [
       {
-        url: "https://isaacmiana.vercel.app/logo.png",
+        url: "https://isaacmaina.vercel.app/logo.png",
         width: 1200,
         height: 630,
-        alt: "Isaac Miana - Software Developer Portfolio",
+        alt: "Isaac Maina - Software Developer Portfolio",
       },
     ],
   },
@@ -40,10 +40,10 @@ export const siteConfig: Metadata = {
     card: "summary_large_image",
     title: "Isaac Maina - Fullstack Software Developer",
     description: "Fullstack Software Engineer based in Kenya",
-    images: ["https://isaacmiana.vercel.app/logo.png"],
+    images: ["https://isaacmaina.vercel.app/logo.png"],
   },
   alternates: {
-    canonical: "https://isaacmiana.vercel.app/",
+    canonical: "https://isaacmaina.vercel.app/",
   },
   authors: {
     name: "Isaac Maina",
