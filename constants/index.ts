@@ -4,6 +4,7 @@ export interface ProjectsProps {
   title: string;
   description: string;
   link: string;
+  source: string;
   alt_text: string;
   technologies: Array<string>;
 }
@@ -139,31 +140,32 @@ export const OTHER_SKILL = [
 
 export const PROJECTS: ProjectsProps[] = [
   {
-    title: "Job posting web application",
-    alt_text:
-      "Screenshot of job posting web application developed with Django.",
-    description:
-      "A job posting system that is user-friendly and uses Django, the popular Python framework. The system includes a user role-based authentication feature enabling clients to post jobs and freelancers to apply for opportunities seamlessly. Additionally, I have integrated Channels and Websockets to facilitate real-time chat functionality that enables enhanced communication between clients and freelancers.",
-    image: "/projects/project-1.png",
-    link: "https://github.com/isaacmain254/Workpay",
-    technologies: [
-      "Django",
-      "JavaScript",
-      "HTML",
-      "CSS",
-      "Channels",
-      "Websockets",
-    ],
-  },
-  {
     title: "Sacco management system",
     alt_text:
       "Screenshot of a SACCO management system web application, built with React and Django.",
     description:
       "Web application built with React and Django, designed to streamline SACCO operations. The system provides solution for managing finances, client information, and loan processes. Key features include: Role-based authentication, Financial management, Customer management, Loan management and Reporting.",
     image: "/projects/project-2.png",
-    link: "https://github.com/isaacmain254/open-sacco",
+    link: "https://open-sacco.vercel.app/",
+    source: "https://github.com/isaacmain254/open-sacco",
     technologies: ["React", "Django", "TypeScript", "Tailwind"],
+  },
+  {
+    title: "Job posting web application",
+    alt_text:
+      "Screenshot of job posting web application developed with Django.",
+    description:
+      "A job posting system that is user-friendly and uses Django, the popular Python framework. The system includes a user role-based authentication feature enabling clients to post jobs and freelancers to apply for opportunities seamlessly. Additionally, I have integrated Channels and Websockets to facilitate real-time chat functionality that enables enhanced communication between clients and freelancers.",
+    image: "/projects/project-1.png",
+    link: "https://mysite-wm0g.onrender.com",
+    source: "https://github.com/isaacmain254/Workpay",
+    technologies: [
+      "Django",
+      "JavaScript",
+      "Bootstrap",
+      "Channels",
+      "Websockets",
+    ],
   },
   {
     title: "Crownlinks website",
@@ -172,6 +174,7 @@ export const PROJECTS: ProjectsProps[] = [
       "This project marked the beginning of my journey in web development. As my first website, it was a hands-on experience where I built foundational skills, from crafting a clean layout to implementing basic interactive features. This project sparked my passion for coding, setting the stage for a career in creating impactful, user-friendly websites.",
     image: "/projects/project-3.png",
     link: "https://isaacmaina.netlify.app/",
+    source: "https://github.com/isaacmain254/software-consultant-website",
     technologies: ["React", "CSS"],
   },
   {
@@ -181,6 +184,8 @@ export const PROJECTS: ProjectsProps[] = [
       "I created a modern and interactive Webflow website with a sleek design that is easy to use and responsive across all devices.",
     image: "/projects/webflow-1.png",
     link: "https://coffee-shop-61e2ee.webflow.io/",
+    source:
+      "https://preview.webflow.com/preview/coffee-shop-61e2ee?utm_medium=preview_link&utm_source=designer&utm_content=coffee-shop-61e2ee&preview=0f90e39b132a5cd1aec112b5fc4aea6a&workflow=preview",
     technologies: ["Webflow"],
   },
   {
@@ -190,6 +195,8 @@ export const PROJECTS: ProjectsProps[] = [
       "Global Pay is a payment system website developed using Webflow. This project focused on designing and creating a sleek, user-friendly site aimed at boosting sales and enhancing customer engagement.",
     image: "/projects/webflow-2.png",
     link: "https://global-pay-africa.webflow.io/",
+    source:
+      "https://preview.webflow.com/preview/global-pay-africa?utm_medium=preview_link&utm_source=designer&utm_content=global-pay-africa&preview=f41f545016de4f8e60596fe69d6e308a&workflow=preview",
     technologies: ["Webflow"],
   },
   {
@@ -199,6 +206,8 @@ export const PROJECTS: ProjectsProps[] = [
       "A sleek, user-friendly digital marketing agency site designed to highlight services, drive client engagement, and demonstrate effective use of modern web design and responsive functionality.",
     image: "/projects/Digital-marketing-agency.png",
     link: "https://digital-marketing-agency-e36151.webflow.io/",
+    source:
+      "https://preview.webflow.com/preview/digital-marketing-agency-e36151?utm_medium=preview_link&utm_source=designer&utm_content=digital-marketing-agency-e36151&preview=7148326e9091867843b376cd3152fcfa&workflow=preview",
     technologies: ["Webflow"],
   },
 ] as const;

@@ -58,6 +58,7 @@ export const Projects = () => {
             title={project.title}
             description={project.description}
             link={project.link}
+            source={project.source}
             technologies={project.technologies}
           />
         ))}

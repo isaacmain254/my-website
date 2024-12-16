@@ -7,9 +7,11 @@ export const ProjectCard = ({
   title,
   description,
   link,
+  source,
   alt_text,
   technologies,
 }: ProjectsProps) => {
+  const source_text = technologies.includes("Webflow") ? "Read Only" : "Github";
   return (
     <div className="relative flex flex-col h-full pb-4 overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] group">
       <Image
@@ -34,7 +36,7 @@ export const ProjectCard = ({
           </li>
         ))}
       </ul>
-      <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center lg:opacity-0 group-hover:opacity-100 opacity-100 transition-opacity duration-300">
+      <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col gap-3 items-center justify-center lg:opacity-0 group-hover:opacity-100 opacity-100 transition-opacity duration-300">
         <Link
           href={link}
           target="_blank"
@@ -42,6 +44,14 @@ export const ProjectCard = ({
           className="px-5 py-2 bg-[#2A0E61] text-white font-medium rounded-lg hover:bg-[#3A1E71] transition-colors"
         >
           Preview
+        </Link>
+        <Link
+          href={source}
+          target="_blank"
+          rel="noreferrer noopener"
+          className="px-5 py-2 text-white font-medium rounded-lg border  border-[#7042f88b] opacity-[0.9] hover:border-white"
+        >
+          {`${source_text} Link`}
         </Link>
       </div>
     </div>

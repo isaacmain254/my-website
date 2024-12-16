@@ -38,7 +38,7 @@ export const siteConfig: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Isaac Miana - Software Developer Portfolio",
+    title: "Isaac Maina - Fullstack Software Developer",
     description: "Fullstack Software Engineer based in Kenya",
     images: ["https://isaacmiana.vercel.app/logo.png"],
   },
