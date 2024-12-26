@@ -167,6 +167,25 @@ export const PROJECTS: ProjectsProps[] = [
       "Websockets",
     ],
   },
+    {
+    title: "Django E-commerce website",
+    alt_text:
+      "Screenshot of an e-commerce web application developed with Django.",
+    description:
+      "This is an e-commerce website built with Django. It allows users to browse products, add them to the cart, and purchase them using Stripe. The website also includes an administration interface that allows the site owner to add, update, and delete products.",
+    image: "/projects/django-ecommerce.png",
+    link: "https://github.com/isaacmain254/ecommerce/blob/main/README.md",
+    source: "https://github.com/isaacmain254/ecommerce",
+    technologies: [
+      "Django",
+      "JQuery",
+      "HTML",
+      "CSS",
+      "Stripe",
+      "Celery",
+      'RabbitMQ'
+    ],
+  },
   {
     title: "Crownlinks website",
     alt_text: "Screenshot of a Reactjs portfolio website.",
