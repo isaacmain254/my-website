@@ -140,6 +140,16 @@ export const OTHER_SKILL = [
 
 export const PROJECTS: ProjectsProps[] = [
   {
+    title: "Men's shoes ecommerce",
+    alt_text: "Screenshot of a e-commerce web application, built with Nextjs",
+    description:
+      " A fully functional e-commerce platform built with Next.js, Tailwind CSS, MongoDB, and Stripe. Features include a responsive UI, product browsing, shopping cart functionality, and seamless payment integration with Stripe.",
+    image: "/projects/men-shoes-ecommerce.png",
+    link: "https://menshoes.vercel.app/",
+    source: "https://github.com/isaacmain254/mongodb-nextjs-ecommerce",
+    technologies: ["Nextjs", "TailwindCSS", "Stripe", "MongoDB"],
+  },
+  {
     title: "Sacco management system",
     alt_text:
       "Screenshot of a SACCO management system web application, built with React and Django.",
@@ -167,7 +177,7 @@ export const PROJECTS: ProjectsProps[] = [
       "Websockets",
     ],
   },
-    {
+  {
     title: "Django E-commerce website",
     alt_text:
       "Screenshot of an e-commerce web application developed with Django.",
@@ -183,7 +193,7 @@ export const PROJECTS: ProjectsProps[] = [
       "CSS",
       "Stripe",
       "Celery",
-      'RabbitMQ'
+      "RabbitMQ",
     ],
   },
   {
