@@ -147,7 +147,7 @@ export const PROJECTS: ProjectsProps[] = [
     image: "/projects/men-shoes-ecommerce.png",
     link: "https://menshoes.vercel.app/",
     source: "https://github.com/isaacmain254/mongodb-nextjs-ecommerce",
-    technologies: ["Nextjs", "TailwindCSS", "Stripe", "MongoDB"],
+    technologies: ["Nextjs", "TailwindCSS", "Stripe", "MongoDB", "Redux"],
   },
   {
     title: "Sacco management system",
