@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], display: 'swap' });
+const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const viewport: Viewport = {
   themeColor: "#030014",
@@ -19,6 +19,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = siteConfig;
 
 export default function RootLayout({ children }: PropsWithChildren) {
+  const currentYear = new Date().getFullYear();
   return (
     <html lang="en">
       <body
@@ -30,7 +31,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
         <StarsCanvas />
         <Navbar />
         {children}
-        <Footer />
+        <Footer currentYear={currentYear} />
       </body>
     </html>
   );
