@@ -24,7 +24,7 @@ export const ContactEmail = ({ name, email, message }: ContactEmailProps) => (
   <Html>
     <Head />
     <Preview>
-      This message is sent from the portfolio using the contact form.
+      New message from {name}
     </Preview>
     <Body style={main}>
       <Container style={container}>
