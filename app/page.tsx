@@ -5,6 +5,7 @@ import { Projects } from "@/components/main/projects";
 import { Skills } from "@/components/main/skills";
 import { AboutMe } from "../components/main/about-me";
 import ProjectPhase from "@/components/main/project-phase";
+import Contact from "@/components/main/contact";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Experience />
         {/* <Encryption /> */}
         <Projects />
+        <Contact />
         {/* <div className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">Have a gig for me in mind..? Let's build something together</div> */}
       </div>
     </main>

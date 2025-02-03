@@ -55,17 +55,17 @@ export const HeroContent = () => {
           <a
             className="py-2  px-5 text-center text-white cursor-pointer rounded-lg border  border-[#7042f88b] opacity-[0.9] hover:border-white"
             href="#projects"
-             aria-label="View Projects"
+            aria-label="View Projects"
             title="Explore My Projects"
           >
             Learn more
           </a>
-          {/* <a
+          <a
             className="button-primary  py-2 px-5 text-center text-white cursor-pointer rounded-lg "
-            href=""
+            href="#contact-me"
           >
             Book a call
-          </a> */}
+          </a>
         </motion.div>
       </div>
 

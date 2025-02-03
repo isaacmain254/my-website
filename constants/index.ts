@@ -147,7 +147,7 @@ export const PROJECTS: ProjectsProps[] = [
     image: "/projects/men-shoes-ecommerce.png",
     link: "https://menshoes.vercel.app/",
     source: "https://github.com/isaacmain254/mongodb-nextjs-ecommerce",
-    technologies: ["Nextjs", "TailwindCSS", "Stripe", "MongoDB", "Redux"],
+    technologies: ["Nextjs", "TailwindCSS", "Stripe", "MongoDB", "Redux", "Cloudinary"],
   },
   {
     title: "Sacco management system",
@@ -254,10 +254,15 @@ export const NAV_LINKS = [
     title: "Projects",
     link: "#projects",
   },
+  {
+    title: "Contact Me",
+    link: "#contact-me",
+  },
 ] as const;
 
 export const LINKS = {
   sourceCode: "https://github.com/isaacmain254/my-website",
+  fork: "https://github.com/isaacmain254/my-website/fork",
 };
 
 export const EXPERIENCES = [

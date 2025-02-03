@@ -9,6 +9,7 @@ import { siteConfig } from "@/config";
 import { cn } from "@/lib/utils";
 
 import "./globals.css";
+import BackToTop from "@/components/sub/back-top";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
         <Navbar />
         {children}
         <Footer currentYear={currentYear} />
+        <BackToTop />
       </body>
     </html>
   );
