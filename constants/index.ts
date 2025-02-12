@@ -1,4 +1,5 @@
 import { RxGithubLogo, RxTwitterLogo, RxLinkedinLogo } from "react-icons/rx";
+import { FaWhatsapp } from "react-icons/fa";
 export interface ProjectsProps {
   image: string;
   title: string;
@@ -147,7 +148,14 @@ export const PROJECTS: ProjectsProps[] = [
     image: "/projects/men-shoes-ecommerce.png",
     link: "https://menshoes.vercel.app/",
     source: "https://github.com/isaacmain254/mongodb-nextjs-ecommerce",
-    technologies: ["Nextjs", "TailwindCSS", "Stripe", "MongoDB", "Redux", "Cloudinary"],
+    technologies: [
+      "Nextjs",
+      "TailwindCSS",
+      "Stripe",
+      "MongoDB",
+      "Redux",
+      "Cloudinary",
+    ],
   },
   {
     title: "Sacco management system",
@@ -294,6 +302,12 @@ export const EXPERIENCES = [
 ];
 
 export const SOCIALS = [
+  {
+    name: "Whatsapp",
+    icon: FaWhatsapp,
+    link: "https://wa.me/254748923894",
+    "aria-label": "Connect with me on Whatsapp",
+  },
   {
     name: "Twitter",
     icon: RxTwitterLogo,

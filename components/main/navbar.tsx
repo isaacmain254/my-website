@@ -63,7 +63,7 @@ export const Navbar = () => {
               Upwork
             </Link>
             <Link
-              href="https://www.fiverr.com/isaac_maina"
+              href="https://www.fiverr.com/users/isaacmaina968"
               target="_blank"
               rel="noreferrer noopener"
               className="flex gap-2 cursor-pointer border-b border-gray-400 py-2 hover:text-[rgb(112,66,248)] transition"
@@ -103,7 +103,7 @@ export const Navbar = () => {
             />
           </Link>
           <Link
-            href="https://www.fiverr.com/isaac_maina"
+            href="https://www.fiverr.com/users/isaacmaina968"
             target="_blank"
             rel="noreferrer noopener"
             aria-label="Hire me on Fiverr"
