@@ -26,7 +26,11 @@ const ProjectPhase = () => {
       >
         <h2>Project Phase</h2>
       </motion.div>
-      <AnimatedDiv className="flex flex-col md:flex-row justify-between  gap-8 mt-20 max-lg:px-3">
+      <div className="text-[#9ca3af]">
+        Need to speed up development, start a new project from scratch, or
+        update an existing one? I’ve got you covered!
+      </div>
+      <AnimatedDiv className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-8 mt-20 max-lg:px-3">
         <div className="w-full p-5 border border-[#7042f88b] opacity-[0.9] rounded-md">
           <Image src="/research.png" alt="" width={60} height={60} />
           <h3 className="text-white text-2xl py-3 leading-8">Research</h3>
@@ -49,6 +53,14 @@ const ProjectPhase = () => {
           <p className="text-[#9ca3af] text-base">
             Building robust, scalable, and high-performance applications using
             modern technologies.
+          </p>
+        </div>
+        <div className="w-full p-5 border border-[#7042f88b] opacity-[0.9] rounded-md">
+          <Image src="/project-launch.png" alt="" width={60} height={60} />
+          <h3 className="text-white text-2xl py-3 leading-8">Project launch</h3>
+          <p className="text-[#9ca3af] text-base">
+            Smooth launch and conducting thorough reviews to guarantee the
+            success and continuous improvement of your project.
           </p>
         </div>
       </AnimatedDiv>
