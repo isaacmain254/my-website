@@ -275,28 +275,28 @@ export const LINKS = {
 
 export const EXPERIENCES = [
   {
-    title: "Frontend Software Developer",
-    company_name: "Upscale Technologies",
-    iconBg: "#FFFFFF",
-    date: "Feburuary 2024 - September 2024",
-    points: [
-      "Developed and maintained front-end features for enterprise resource planning (ERP) applications using Vue.js, TypeScript, and GraphQL to enhance user experience.",
-      "Successfully integrated Vue.js with GraphQL API to improve data fetching efficiency and application performance.",
-      "Collaborated with senior developers on architectural decisions, ensuring scalability and maintainability of software systems",
-      "Conducted code reviews, provided constructive feedback, and enforced coding standards to maintain high code quality",
-    ],
-  },
-  {
     title: "Fullstack Software Developer - Freelance",
     company_name: "",
     iconBg: "#ffffff",
-    date: "September 2024 - Present",
+    date: "December 2023 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
-      "Solo web application development also open to collborative development",
+      "Solo web application development also open to collaborative development",
+    ],
+  },
+  {
+    title: "Frontend Software Developer",
+    company_name: "Upscale Technologies",
+    iconBg: "#FFFFFF",
+    date: "February 2024 - September 2024",
+    points: [
+      "Developed and maintained front-end features for enterprise resource planning (ERP) applications using Vue.js, TypeScript, and GraphQL to enhance user experience.",
+      "Successfully integrated Vue.js with GraphQL API to improve data fetching efficiency and application performance.",
+      "Collaborated with senior developers on architectural decisions, ensuring scalability and maintainability of software systems",
+      "Conducted code reviews, provided constructive feedback, and enforced coding standards to maintain high code quality",
     ],
   },
 ];
