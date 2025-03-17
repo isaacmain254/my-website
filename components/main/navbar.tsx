@@ -57,7 +57,7 @@ export const Navbar = () => {
               href="https://www.upwork.com/freelancers/~01466943c42b35dcd4"
               target="_blank"
               rel="noreferrer noopener"
-              className="flex gap-2 cursor-pointer border-b border-gray-400 py-2 hover:text-[rgb(112,66,248)] transition"
+              className="hidden gap-2 cursor-pointer border-b border-gray-400 py-2 hover:text-[rgb(112,66,248)] transition"
               onClick={() => setMobileMenuOpen(false)}
             >
               Upwork
@@ -66,7 +66,7 @@ export const Navbar = () => {
               href="https://www.fiverr.com/users/isaacmaina968"
               target="_blank"
               rel="noreferrer noopener"
-              className="flex gap-2 cursor-pointer border-b border-gray-400 py-2 hover:text-[rgb(112,66,248)] transition"
+              className="hidden gap-2 cursor-pointer border-b border-gray-400 py-2 hover:text-[rgb(112,66,248)] transition"
               onClick={() => setMobileMenuOpen(false)}
             >
               Fiverr
@@ -87,7 +87,7 @@ export const Navbar = () => {
           </div>
         </div>
 
-        <div className="hidden lg:flex flex-row gap-3">
+        <div className="hidden flex-row gap-3">
           <Link
             href="https://www.upwork.com/freelancers/~01466943c42b35dcd4"
             target="_blank"
