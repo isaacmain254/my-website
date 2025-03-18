@@ -1,6 +1,7 @@
 "use client";
 
 import { SparklesIcon } from "@heroicons/react/24/solid";
+import { MdOutlineEmail, MdLocalPhone } from "react-icons/md";
 import React, { useEffect, useRef } from "react";
 import { useFormState } from "react-dom";
 import Image from "next/image";
@@ -100,6 +101,17 @@ const Contact = () => {
             width={350}
             height={350}
           />
+
+          <div>
+            <div className="flex items-center gap-2">
+              <MdOutlineEmail className="text-2xl" />
+              <span>isaacmain72@gmail.com</span>
+            </div>
+            <div className="flex items-center gap-2 py-3">
+              <MdLocalPhone className="text-2xl" />
+              <span>+254 748923894</span>
+            </div>
+          </div>
           <div className="flex gap-4">
             {SOCIALS.map((social, index) => (
               <Link
