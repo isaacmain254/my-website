@@ -4,8 +4,9 @@ import { SkillText } from "@/components/sub/skill-text";
 import {
   BACKEND_SKILL,
   MOBILE_APPS_SKILL,
+  DEVOPS,
   OTHER_SKILL,
-  FRONTEND_SKILL
+  FRONTEND_SKILL,
 } from "@/constants";
 
 export const Skills = () => {
@@ -16,51 +17,66 @@ export const Skills = () => {
       className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden py-20"
     >
       <SkillText />
-      <h3 className="text-white text-xl mt-5">Frontend Development</h3>
-      <div className="flex flex-row justify-around flex-wrap  gap-5 items-center">
-        {FRONTEND_SKILL.map((skill, i) => (
-          <SkillDataProvider
-            key={skill.skill_name}
-            src={skill.image}
-            name={skill.skill_name}
-            index={i}
-          />
-        ))}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-8 mt-20 max-lg:px-3">
+        <div className="border border-[#7042f88b] opacity-[0.9] rounded-md p-3">
+          <h3 className="text-white text-center text-xl mt-5 pb-5">
+            Frontend Development
+          </h3>
+          <div className="flex flex-row justify-around flex-wrap  gap-5 items-center">
+            {FRONTEND_SKILL.map((skill, i) => (
+              <SkillDataProvider
+                key={skill.skill_name}
+                src={skill.image}
+                name={skill.skill_name}
+                index={i}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="border border-[#7042f88b] opacity-[0.9] rounded-md p-3">
+          <h3 className="text-white text-center text-xl mt-5 pb-5">
+            Backend Development
+          </h3>
+          <div className="flex flex-row justify-around flex-wrap  gap-5 items-center">
+            {BACKEND_SKILL.map((skill, i) => (
+              <SkillDataProvider
+                key={skill.skill_name}
+                src={skill.image}
+                name={skill.skill_name}
+                index={i}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="border border-[#7042f88b] opacity-[0.9] rounded-md p-3">
+          <h3 className="text-white text-center text-xl mt-5 pb-5">DevOps</h3>
+          <div className="flex flex-row justify-around flex-wrap gap-5 items-center">
+            {DEVOPS.map((skill, i) => (
+              <SkillDataProvider
+                key={skill.skill_name}
+                src={skill.image}
+                name={skill.skill_name}
+                index={i}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="border border-[#7042f88b] opacity-[0.9] rounded-md p-3">
+          <h3 className="text-white text-center text-xl mt-5 pb-5">
+            Web and Graphic Design
+          </h3>
+          <div className="flex flex-row justify-around flex-wrap gap-5 items-center">
+            {OTHER_SKILL.map((skill, i) => (
+              <SkillDataProvider
+                key={skill.skill_name}
+                src={skill.image}
+                name={skill.skill_name}
+                index={i}
+              />
+            ))}
+          </div>
+        </div>
       </div>
-      <h3 className="text-white text-xl mt-5">Backend Development</h3>
-      <div className="flex flex-row justify-around flex-wrap  gap-5 items-center">
-        {BACKEND_SKILL.map((skill, i) => (
-          <SkillDataProvider
-            key={skill.skill_name}
-            src={skill.image}
-            name={skill.skill_name}
-            index={i}
-          />
-        ))}
-      </div>
-      <h3 className="text-white text-xl mt-5">Mobile Application Development</h3>
-      <div className="flex flex-row justify-around flex-wrap gap-5 items-center">
-        {MOBILE_APPS_SKILL.map((skill, i) => (
-          <SkillDataProvider
-            key={skill.skill_name}
-            src={skill.image}
-            name={skill.skill_name}
-            index={i}
-          />
-        ))}
-      </div>
-      <h3 className="text-white text-xl mt-5">Web Design</h3>
-      <div className="flex flex-row justify-around flex-wrap gap-5 items-center">
-        {OTHER_SKILL.map((skill, i) => (
-          <SkillDataProvider
-            key={skill.skill_name}
-            src={skill.image}
-            name={skill.skill_name}
-            index={i}
-          />
-        ))}
-      </div>
-
       <div className="w-full h-full absolute">
         <div className="w-full h-full z-[-10] opacity-30 absolute flex items-center justify-center bg-cover">
           <video

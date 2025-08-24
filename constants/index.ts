@@ -13,14 +13,14 @@ export const FRONTEND_SKILL = [
   {
     skill_name: "HTML",
     image: "html.png",
-    width: 80,
-    height: 80,
+    width: 20,
+    height: 20,
   },
   {
     skill_name: "CSS",
     image: "css.png",
-    width: 80,
-    height: 80,
+    width: 20,
+    height: 20,
   },
   {
     skill_name: "JavaScript",
@@ -31,56 +31,62 @@ export const FRONTEND_SKILL = [
   {
     skill_name: "Tailwind CSS",
     image: "tailwind.png",
-    width: 80,
-    height: 80,
+    width: 20,
+    height: 20,
   },
   {
     skill_name: "React",
     image: "react.png",
-    width: 80,
-    height: 80,
+    width: 20,
+    height: 20,
   },
   {
     skill_name: "Redux",
     image: "redux.png",
-    width: 80,
-    height: 80,
+    width: 20,
+    height: 20,
   },
   {
     skill_name: "React Query",
     image: "reactquery.png",
-    width: 80,
-    height: 80,
+    width: 20,
+    height: 20,
   },
   {
     skill_name: "TypeScript",
     image: "ts.png",
-    width: 80,
-    height: 80,
+    width: 20,
+    height: 20,
   },
   {
-    skill_name: "Next.js 14",
+    skill_name: "NextJs",
     image: "next.png",
-    width: 80,
-    height: 80,
+    width: 20,
+    height: 20,
   },
   {
     skill_name: "Framer Motion",
     image: "framer.png",
-    width: 80,
-    height: 80,
+    width: 20,
+    height: 20,
   },
   {
     skill_name: "Stripe",
     image: "stripe.png",
-    width: 80,
-    height: 80,
+    width: 20,
+    height: 20,
   },
   {
     skill_name: "Graphql",
     image: "graphql.png",
-    width: 80,
-    height: 80,
+    width: 20,
+    height: 20,
+  },
+  {
+    skill_name: "React Native",
+    image: "react-native.png",
+    width: 70,
+    height: 70,
   },
 ] as const;
 
@@ -124,10 +130,31 @@ export const MOBILE_APPS_SKILL = [
   },
 ] as const;
 
+export const DEVOPS = [
+  {
+    skill_name: "Docker",
+    image: "docker-icon.svg",
+  },
+  {
+    skill_name: "AWS",
+    image: "aws.svg",
+  },
+  {
+    skill_name: "GitHub Actions",
+    image: "github-actions.svg",
+  },
+
+] as const;
 export const OTHER_SKILL = [
   {
     skill_name: "Figma",
     image: "figma.png",
+    width: 50,
+    height: 50,
+  },
+  {
+    skill_name: "Canva",
+    image: "canva.png",
     width: 50,
     height: 50,
   },

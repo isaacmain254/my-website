@@ -32,7 +32,7 @@ export const AboutMe = () => {
           variants={slideInFromLeft(0.5)}
           className="text-[30px] text-white font-medium mt-[10px] text-center mb-[10px]"
         >
-          <h2>About Me</h2>
+          <h2>About Isaac</h2>
         </motion.div>
       </div>
       <div className="w-full lg:w-[80%]  mx-auto">

@@ -34,9 +34,10 @@ export const SkillDataProvider = ({
       animate={inView ? "visible" : "hidden"}
       custom={index}
       transition={{ delay: index * animationDelay }}
+      className="flex items-center gap-2 text-white border border-[#9ca3af] px-5 py-1 rounded-full opacity-[0.9]"
     >
-      <Image src={`/skills/${src}`} width={60} height={60} alt={name} />
-      <p className="text-white">{name}</p>
+      <Image src={`/skills/${src}`} width={30} height={30} alt={name} />
+      <p className="text-[#9ca3af] text-base">{name}</p>
     </motion.div>
   );
 };
