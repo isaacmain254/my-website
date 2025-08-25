@@ -9,6 +9,14 @@ export interface ProjectsProps {
   alt_text: string;
   technologies: Array<string>;
 }
+
+export interface FeaturedProjectsProps {
+  title: string;
+  description: string;
+  technologies: Array<string>;
+  label: string;
+}
+
 export const FRONTEND_SKILL = [
   {
     skill_name: "HTML",
@@ -143,7 +151,6 @@ export const DEVOPS = [
     skill_name: "GitHub Actions",
     image: "github-actions.svg",
   },
-
 ] as const;
 export const OTHER_SKILL = [
   {
@@ -279,19 +286,19 @@ export const PROJECTS: ProjectsProps[] = [
 export const NAV_LINKS = [
   {
     title: "About me",
-    link: "#about-me",
+    link: "/#about-me",
   },
   {
     title: "Skills",
-    link: "#skills",
+    link: "/#skills",
   },
   {
     title: "Projects",
-    link: "#projects",
+    link: "/#projects",
   },
   {
     title: "Contact Me",
-    link: "#contact-me",
+    link: "/#contact-me",
   },
 ] as const;
 
@@ -354,3 +361,21 @@ export const SOCIALS = [
     "aria-label": "See all my projects on GitHub",
   },
 ] as const;
+
+
+export const FEATURED_PROJECTS: FeaturedProjectsProps[] = [
+  {
+    title: "Upscale ERP",
+    description:
+      "Contributed to the development of a comprehensive ERP system by implementing front-end features using Vue.js, TypeScript, and GraphQL. Enhanced data fetching efficiency and application performance through GraphQL integration, and collaborated on architectural decisions to ensure scalability and maintainability.",
+    technologies: ["Vue.js", "TypeScript", "GraphQL", "PWA", "TailwindCSS"],
+    label: "Production",
+  },
+  {
+    title: "Cocktailzen",
+    description:
+      "A web application that leverages AI to generates cocktail recipes based on the selected ingredients.",
+    technologies: ["Django", "NextJs", "OpenAI API", "TailwindCSS", "Docker"],
+    label: "Client",
+  }
+];

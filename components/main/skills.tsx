@@ -17,7 +17,7 @@ export const Skills = () => {
       className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden py-20"
     >
       <SkillText />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-8 mt-20 max-lg:px-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-8 mt-20 max-lg:px-3 px-0">
         <div className="border border-[#7042f88b] opacity-[0.9] rounded-md p-3">
           <h3 className="text-white text-center text-xl mt-5 pb-5">
             Frontend Development

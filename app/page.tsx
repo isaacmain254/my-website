@@ -1,11 +1,11 @@
 // import { Encryption } from "@/components/main/encryption";
 import Experience from "@/components/main/Experience";
 import { Hero } from "@/components/main/hero";
-import { Projects } from "@/components/main/projects";
 import { Skills } from "@/components/main/skills";
 import { AboutMe } from "../components/main/about-me";
 import ProjectPhase from "@/components/main/project-phase";
 import Contact from "@/components/main/contact";
+import { FeaturedProjects } from "@/components/main/featured-projects";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
         <Skills />
         <Experience />
         {/* <Encryption /> */}
-        <Projects />
+        <FeaturedProjects />
         <Contact />
         {/* <div className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">Have a gig for me in mind..? Let's build something together</div> */}
       </div>

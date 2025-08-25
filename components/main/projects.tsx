@@ -6,15 +6,19 @@ import { useState } from "react";
 import AnimatedDiv from "../sub/AnimatedDiv";
 
 export const Projects = () => {
-  const [filter, setFilter] = useState<"all" | "webflow">("all");
+  const [filter, setFilter] = useState<"all" | "webflow" | "web">("all");
 
   const filteredProjects =
     filter === "all"
       ? PROJECTS
-      : PROJECTS.filter((project) => project.technologies.includes("Webflow"));
+      : filter === "webflow"
+        ? PROJECTS.filter((project) => project.technologies.includes("Webflow"))
+        : PROJECTS.filter(
+            (project) => !project.technologies.includes("Webflow")
+          );
 
   return (
-    <section id="projects" className=" py-20 w-full lg:w-[80%] mx-auto">
+    <section className=" py-20 w-full lg:w-[80%] mx-auto">
       <div className="w-full flex flex-col items-center justify-center mb-10">
         <div className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]]">
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
@@ -37,6 +41,16 @@ export const Projects = () => {
           onClick={() => setFilter("all")}
         >
           All
+        </button>
+        <button
+          className={`py-2 px-5 text-center text-white cursor-pointer rounded-lg ${
+            filter === "web"
+              ? "button-primary "
+              : "border border-[#7042f88b] opacity-[0.9]"
+          }`}
+          onClick={() => setFilter("web")}
+        >
+          Web
         </button>
         <button
           className={`py-2 px-5 text-center text-white cursor-pointer rounded-lg ${
