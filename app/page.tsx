@@ -6,6 +6,7 @@ import { AboutMe } from "../components/main/about-me";
 import ProjectPhase from "@/components/main/project-phase";
 import Contact from "@/components/main/contact";
 import { FeaturedProjects } from "@/components/main/featured-projects";
+import { FeaturedBlogs } from "@/components/main/featuredBlogs";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Experience />
         {/* <Encryption /> */}
         <FeaturedProjects />
+        <FeaturedBlogs />
         <Contact />
         {/* <div className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">Have a gig for me in mind..? Let's build something together</div> */}
       </div>
