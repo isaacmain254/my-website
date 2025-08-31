@@ -388,7 +388,7 @@ export const FEATURED_BLOGS = [
   {
     title: "Build embeddable chat widget using React and vite",
     description:
-      "A comprehensive on building embeddable widget that can be embedded on any website",
+      "A comprehensive guide on building embeddable widget that can be embedded on any website",
     technologies: ["React", "Vite", "TailwindCSS"],
     publisher: "Medium",
     link: "https://medium.com/@isaacmain72/build-your-own-chatbot-widget-using-react-and-vite-ee6c3e2d96d0"
