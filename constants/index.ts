@@ -1,5 +1,6 @@
 import { RxGithubLogo, RxTwitterLogo, RxLinkedinLogo } from "react-icons/rx";
 import { FaWhatsapp } from "react-icons/fa";
+import { SiMedium } from "react-icons/si";
 export interface ProjectsProps {
   image: string;
   title: string;
@@ -364,6 +365,12 @@ export const SOCIALS = [
     link: "https://github.com/isaacmain254",
     "aria-label": "See all my projects on GitHub",
   },
+  {
+     name: "Medium",
+    icon: SiMedium,
+    link: "https://medium.com/@isaacmain72",
+    "aria-label": "See all my articles on Medium",
+  }
 ] as const;
 
 
@@ -392,5 +399,13 @@ export const FEATURED_BLOGS = [
     technologies: ["React", "Vite", "TailwindCSS"],
     publisher: "Medium",
     link: "https://medium.com/@isaacmain72/build-your-own-chatbot-widget-using-react-and-vite-ee6c3e2d96d0"
+  },
+ {
+    title: "A Step-by-Step Guide to Building Subscription Payments in Next.js with Stripe",
+    description:
+      "A comprehensive guide on building subscription billing system in Next.js using Stripe",
+    technologies: ["Next.js", "Stripe", "Typescript"],
+    publisher: "Medium",
+    link: "https://medium.com/@isaacmain72/a-step-by-step-guide-to-building-subscription-payments-in-next-js-with-stripe-1f53208caf6a"
   },
 ];
