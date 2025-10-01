@@ -408,4 +408,12 @@ export const FEATURED_BLOGS = [
     publisher: "Medium",
     link: "https://medium.com/@isaacmain72/a-step-by-step-guide-to-building-subscription-payments-in-next-js-with-stripe-1f53208caf6a"
   },
+   {
+    title: "JSON Web Tokens (JWT): A Deep Dive into Modern Authentication",
+    description:
+      "A break down on how JWT works, common mistakes and best practices to follow.",
+    technologies: ["JSON Web Token"],
+    publisher: "Medium",
+    link: "https://medium.com/@isaacmain72/json-web-tokens-jwt-a-deep-dive-into-modern-authentication-3962939914e5"
+  },
 ];
