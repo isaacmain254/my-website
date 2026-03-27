@@ -314,6 +314,27 @@ export const LINKS = {
 
 export const EXPERIENCES = [
   {
+    title: "Fullstack Software Developer",
+    company_name: "Seargent Solutions",
+    iconBg: "#ffffff",
+    date: "January 2026 - Present",
+    points: [],
+  },
+  {
+  title: "Founder & Full-Stack Engineer",
+  company_name: "Chatbreez",
+  iconBg: "#ffffff",
+  date: "November 2025 - Present",
+  points: [
+    "Designed and developed a multi-tenant SaaS platform enabling businesses automate WhatsApp communication.",
+    "Built scalable backend architecture using Node.js, Prisma, and PostgreSQL with support for multiple user subscriptions and isolated data per instance.",
+    "Integrated WhatsApp APIs to handle real-time messaging, instance management, and webhook-based event processing.",
+    "Containerized services using Docker and streamlined deployment workflows for consistent development and production environments.",
+    "Optimized performance for message processing and analytics, including aggregation of messaging data for reporting and insights.",
+    "Handled end-to-end product lifecycle including system design, development, testing, and deployment.",
+  ],
+},
+  {
     title: "Fullstack Software Developer - Freelance",
     company_name: "",
     iconBg: "#ffffff",
@@ -375,6 +396,13 @@ export const SOCIALS = [
 
 
 export const FEATURED_PROJECTS: FeaturedProjectsProps[] = [
+  {
+    title: "Chatbreez",
+    description:
+      "Founded and built Chatbreez, a SaaS platform for managing WhatsApp communication through a unified dashboard. Led development of the core architecture, including subscriptions, instance management, webhooks, and messaging workflows.",
+    technologies: ["NodeJs", "Express", "Nextjs", "Postgres", "Redis", "Nginx", "Docker"],
+    label: "Production",
+  },
   {
     title: "Upscale ERP",
     description:
