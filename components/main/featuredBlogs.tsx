@@ -26,7 +26,7 @@ export const FeaturedBlogs = () => {
           developer community covering topics on software development.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-center py-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 items-center py-5">
         {FEATURED_BLOGS.map((blog, index) => (
           <div
             key={index}

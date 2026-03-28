@@ -421,6 +421,14 @@ export const FEATURED_PROJECTS: FeaturedProjectsProps[] = [
 
 export const FEATURED_BLOGS = [
   {
+    title: "Deploy NodeJS to VPS with Docker Compose, Nginx Proxy Manager & GitHub Actions.",
+    description:
+      "A guide on how to deploy Nodejs application to a VPS, set up a secure, automated VPS deployment pipeline using Docker and CI/CD while applying principles that work across any language or framework.",
+    technologies: ["Nodejs", "Docker", "Docker Compose", "Nginx", "GitHub Actions"],
+    publisher: "Medium",
+    link: "https://medium.com/@isaacmain72/deploy-nodejs-to-vps-with-docker-compose-nginx-proxy-manager-github-actions-abbcc7e7d23a"
+  },
+  {
     title: "Build embeddable chat widget using React and vite",
     description:
       "A comprehensive guide on building embeddable widget that can be embedded on any website",
