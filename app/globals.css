@@ -1,8 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
 
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+
+@import "tailwindcss";
 
 .cursive {
   font-family: "Cedarville Cursive", cursive;
@@ -65,4 +67,5 @@
 
 html {
   scroll-behavior: smooth;
+  data-scroll-behavior: smooth
 }

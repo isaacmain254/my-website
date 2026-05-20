@@ -36,7 +36,7 @@ export const SkillDataProvider = ({
       transition={{ delay: index * animationDelay }}
       className="flex items-center gap-2 text-white border border-[#9ca3af] px-5 py-1 rounded-full opacity-[0.9]"
     >
-      <Image src={`/skills/${src}`} width={30} height={30} alt={name} />
+      <Image src={`/skills/${src}`} width={30} height={30} alt={name} className="w-7.5 h-7.5" />
       <p className="text-[#9ca3af] text-base">{name}</p>
     </motion.div>
   );

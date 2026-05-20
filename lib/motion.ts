@@ -1,4 +1,9 @@
-export function slideInFromLeft(delay: number) {
+import type { Variants } from "framer-motion";
+
+type MotionDirection = "left" | "right" | "up" | "down";
+type MotionTransitionType = "decay" | "spring" | "keyframes" | "tween" | "inertia";
+
+export function slideInFromLeft(delay: number): Variants {
   return {
     hidden: { x: -100, opacity: 0 },
     visible: {
@@ -12,7 +17,7 @@ export function slideInFromLeft(delay: number) {
   };
 }
 
-export function slideInFromRight(delay: number) {
+export function slideInFromRight(delay: number): Variants {
   return {
     hidden: { x: 100, opacity: 0 },
     visible: {
@@ -26,7 +31,7 @@ export function slideInFromRight(delay: number) {
   };
 }
 
-export const slideInFromTop = {
+export const slideInFromTop: Variants = {
   hidden: { y: -100, opacity: 0 },
   visible: {
     y: 0,
@@ -37,7 +42,7 @@ export const slideInFromTop = {
     },
   },
 };
-export const textVariant = (delay: number) => {
+export const textVariant = (delay: number): Variants => {
   return {
     hidden: {
       y: -50,
@@ -56,11 +61,11 @@ export const textVariant = (delay: number) => {
 };
 
 export const fadeIn = (
-  direction: string,
-  type: any,
+  direction: MotionDirection,
+  type: MotionTransitionType,
   delay: number,
   duration: number
-) => {
+): Variants => {
   return {
     hidden: {
       x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
@@ -81,7 +86,7 @@ export const fadeIn = (
   };
 };
 
-export const zoomIn = (delay: number, duration: number) => {
+export const zoomIn = (delay: number, duration: number): Variants => {
   return {
     hidden: {
       scale: 0,
@@ -101,11 +106,11 @@ export const zoomIn = (delay: number, duration: number) => {
 };
 
 export const slideIn = (
-  direction: string,
-  type: any,
+  direction: MotionDirection,
+  type: MotionTransitionType,
   delay: number,
   duration: number
-) => {
+): Variants => {
   return {
     hidden: {
       x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
@@ -124,7 +129,10 @@ export const slideIn = (
   };
 };
 
-export const staggerContainer = (staggerChildren: any, delayChildren: any) => {
+export const staggerContainer = (
+  staggerChildren: number,
+  delayChildren: number
+): Variants => {
   return {
     hidden: {},
     show: {
@@ -136,7 +144,7 @@ export const staggerContainer = (staggerChildren: any, delayChildren: any) => {
   };
 };
 
-export const slideInFromBottom = {
+export const slideInFromBottom: Variants = {
   hidden: { opacity: 0, y: 200 },
   visible: {
     opacity: 1,

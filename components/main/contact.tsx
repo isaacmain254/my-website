@@ -2,8 +2,7 @@
 
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import { MdOutlineEmail, MdLocalPhone } from "react-icons/md";
-import React, { useEffect, useRef } from "react";
-import { useFormState } from "react-dom";
+import React, { useEffect, useRef, useActionState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { SOCIALS } from "@/constants";
@@ -15,7 +14,7 @@ const initialState = {
 };
 
 const Contact = () => {
-  const [state, formAction] = useFormState(sendMessage, initialState);
+  const [state, formAction] = useActionState(sendMessage, initialState);
 
   const formRef = useRef<HTMLFormElement>(null);
 
@@ -100,6 +99,7 @@ const Contact = () => {
             alt=""
             width={350}
             height={350}
+            className="w-87.5 h-87.5"
           />
 
           <div>
