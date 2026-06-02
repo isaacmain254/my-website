@@ -73,13 +73,13 @@ export const Navbar = () => {
             </Link>
           </div>
         )}
-        <div className="w-[500px] h-full hidden lg:flex flex-row items-center justify-between md:mr-20">
-          <div className="flex items-center justify-between w-full h-auto border-[rgba(112,66,248,0.38)] bg-[rgba(3,0,20,0.37)] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
+        <div className="h-full hidden lg:flex flex-row items-center justify-between md:mr-10">
+          <div className="flex items-center justify-between gap-4 w-full h-auto border border-[rgba(112,66,248,0.38)] bg-[rgba(3,0,20,0.37)] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.title}
                 href={link.link}
-                className="cursor-pointer hover:text-[rgb(112,66,248)] transition"
+                className="cursor-pointer hover:text-[rgb(112,66,248)] transition text-nowrap text-sm xl:text-base"
               >
                 {link.title}
               </Link>

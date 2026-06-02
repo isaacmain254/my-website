@@ -12,7 +12,10 @@ import { cn } from "@/lib/utils";
 import "./globals.css";
 import BackToTop from "@/components/sub/back-top";
 
-const inter = Inter({ subsets: ["latin"], display: "swap" });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
 
 export const viewport: Viewport = {
   themeColor: "#030014",
@@ -27,7 +30,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
       <body
         className={cn(
           "bg-[#030014] overflow-y-scroll overflow-x-hidden",
-          inter.className
+          inter.variable
         )}
       >
         <StarsCanvas />

@@ -305,6 +305,10 @@ export const NAV_LINKS = [
     title: "Contact Me",
     link: "/#contact-me",
   },
+  {
+    title: "Zoho Consulting",
+    link: "/zoho-consulting",
+  },
 ] as const;
 
 export const LINKS = {

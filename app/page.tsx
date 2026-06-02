@@ -10,7 +10,7 @@ import { FeaturedBlogs } from "@/components/main/featuredBlogs";
 
 export default function Home() {
   return (
-    <main className="h-full w-full" role="main">
+    <main className="h-full w-full font-inter" role="main">
       <div className="flex flex-col gap-20">
         <Hero />
         <AboutMe />
