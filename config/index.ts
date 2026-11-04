@@ -1,55 +1,59 @@
 import type { Metadata } from "next";
 
+import { SITE } from "@/content/site";
+
+const TITLE = `${SITE.name} · Full-stack Software Engineer`;
+const DESCRIPTION =
+  "Isaac Maina is a full-stack software engineer building web products, backend systems and API-driven applications.";
+
 export const siteConfig: Metadata = {
-  title:
-    "Isaac Maina |  Freelance Full-Stack Developer in Kenya | React Django | MERN stack Developer",
-  description:
-    "Isaac is an experienced software developer from Kenya. Specializing in Webflow websites, custom web and mobile application development. Hire for tailored web development services!",
+  metadataBase: new URL(SITE.url),
+  title: {
+    default: TITLE,
+    template: `%s · ${SITE.name}`,
+  },
+  description: DESCRIPTION,
   keywords: [
-    "Full-stack software developer in Kenya",
-    "Freelance web developer Kenya",
-    "Professional Webflow designer",
-    "React.js developer",
-    "Next.js full-stack development",
-    "Webflow website creation",
-    "Django and React full-stack developer",
-    "Custom web application development",
-    "Responsive website design Kenya",
-    "Freelance front-end and back-end developer",
-  ] as Array<string>,
+    "Isaac Maina",
+    "full-stack software engineer",
+    "software engineer Kenya",
+    "backend engineer",
+    "Node.js developer",
+    "Django developer",
+    "Go developer",
+    "React developer",
+    "Next.js developer",
+    "API development",
+    "event-driven architecture",
+    "distributed systems",
+    "PostgreSQL",
+    "developer tooling",
+  ],
+  authors: [{ name: SITE.name, url: "https://github.com/isaacmain254" }],
+  creator: SITE.name,
+  category: "technology",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "Isaac Maina",
-    siteName: "My website",
     type: "website",
-    url:
-      process.env.NODE_ENV === "production"
-        ? "https://isaacmaina.vercel.app/"
-        : "http://localhost:3000",
-    description: "Fullstack Software Engineer based in Kenya",
-    // images: ["/logo.png"],
-    images: [
-      {
-        url: "https://isaacmaina.vercel.app/logo.png",
-        width: 1200,
-        height: 630,
-        alt: "Isaac Maina - Software Developer Portfolio",
-      },
-    ],
+    url: SITE.url,
+    siteName: SITE.name,
+    title: TITLE,
+    description: DESCRIPTION,
+    locale: "en_KE",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Isaac Maina - Fullstack Software Developer",
-    description: "Fullstack Software Engineer based in Kenya",
-    images: ["https://isaacmaina.vercel.app/logo.png"],
+    title: TITLE,
+    description: DESCRIPTION,
+    creator: "@isaacmain3",
   },
-  alternates: {
-    canonical: "https://isaacmaina.vercel.app/",
-  },
-  authors: {
-    name: "Isaac Maina",
-    url: "https://github.com/isaacmain254",
+  robots: {
+    index: true,
+    follow: true,
   },
   verification: {
     google: "lszFf5NAaVZmyOT-qKPfhEX706OvCpwivkdCFGFyZqg",
   },
-} as const;
+};
