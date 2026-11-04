@@ -1,28 +1,23 @@
-// import { Encryption } from "@/components/main/encryption";
-import Experience from "@/components/main/Experience";
-import { Hero } from "@/components/main/hero";
-import { Skills } from "@/components/main/skills";
-import { AboutMe } from "../components/main/about-me";
-import ProjectPhase from "@/components/main/project-phase";
-import Contact from "@/components/main/contact";
-import { FeaturedProjects } from "@/components/main/featured-projects";
-import { FeaturedBlogs } from "@/components/main/featuredBlogs";
+import { BackToTop } from "@/components/layout/back-to-top";
+import { About } from "@/components/sections/about";
+import { Contact } from "@/components/sections/contact";
+import { Experience } from "@/components/sections/experience";
+import { Hero } from "@/components/sections/hero";
+import { SelectedWork } from "@/components/sections/selected-work";
+import { Toolbox } from "@/components/sections/toolbox";
+import { Writing } from "@/components/sections/writing";
 
 export default function Home() {
   return (
-    <main className="h-full w-full" role="main">
-      <div className="flex flex-col gap-20">
-        <Hero />
-        <AboutMe />
-        <ProjectPhase />
-        <Skills />
-        <Experience />
-        {/* <Encryption /> */}
-        <FeaturedProjects />
-        <FeaturedBlogs />
-        <Contact />
-        {/* <div className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">Have a gig for me in mind..? Let's build something together</div> */}
-      </div>
-    </main>
+    <>
+      <Hero />
+      <About />
+      <SelectedWork />
+      <Experience />
+      <Toolbox />
+      <Writing />
+      <Contact />
+      <BackToTop />
+    </>
   );
 }
